@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Front End Assignment</title>
+	<meta name="description" content="Front End Assignment">
+	<meta name="author" content="ylovits">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<form class="dateInputs" id="dateInputs">
+		<label>
+			Enter First Date:
+			<input type="date" id="start" name="start" onchange="handleChangeStart(event);" required>
+		</label>
+		<label>
+			Enter Second Date:
+			<input type="date" id="end" name="end" onchange="handleChangeEnd(event);" required>
+		</label>
+		<button id="button" type="submit" disabled>Get days in-between</button>
+	</form>
+	<p id="result" class="hide result">Days in-between: <span id="daysBetween"></span></p>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
